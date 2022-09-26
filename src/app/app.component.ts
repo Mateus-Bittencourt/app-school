@@ -10,11 +10,11 @@ export class AppComponent {
 
   public login(): void {
     localStorage.isLoggedIn = 'true';
-    // thicd as.router.navigate(['/']);
+    this.router.navigate(['/cursos']);
   }
 
   public logout(): void {
     localStorage.isLoggedIn = 'false';
-    // this.router.navigate(['/']);
+    this.router.navigate(['/']);
   }
 }
