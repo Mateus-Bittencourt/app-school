@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<router-outlet></router-outlet>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="div"></div>
+  <div class="div">
+    <button class="btn btn-outline-light" (click)="login()">Fazer Log in</button>
+    <button class="btn btn-outline-light"(click)="logout()">Log Out</button>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

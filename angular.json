@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "app-web"
+  "defaultProject": "app-web",
+  "cli": {
+    "analytics": "78a19c19-3ca4-4394-b8f8-0e853ce4a9a2"
+  }
 }
