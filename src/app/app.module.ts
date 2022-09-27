@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { CoursesIndexComponent } from './pages/courses-index/courses-index.component';
 import { CourseComponent } from './components/course/course.component';
 import { CoursesShowComponent } from './pages/courses-show/courses-show.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { CoursesShowComponent } from './pages/courses-show/courses-show.componen
     HomeComponent,
     CoursesIndexComponent,
     CourseComponent,
-    CoursesShowComponent
+    CoursesShowComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

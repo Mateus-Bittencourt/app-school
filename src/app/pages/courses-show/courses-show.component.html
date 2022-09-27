@@ -1,4 +1,13 @@
-<a [routerLink]="['/cursos']">Voltar</a>
 
-<h1>Exibir curso {{course.name}}</h1>
+<h1>{{course.name}}</h1>
+<hr>
 <p>{{course.description}}</p>
+<h5>Alunos:</h5>
+
+  <ul>
+    <li *ngFor="let student of course.students">
+      {{student.name}}
+    </li>
+  </ul>
+
+<a [routerLink]="['/cursos']" class="btn btn-outline-dark mt-3">Voltar</a>

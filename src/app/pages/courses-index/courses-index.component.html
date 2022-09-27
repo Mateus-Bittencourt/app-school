@@ -1,3 +1,7 @@
-<h1>Courses Index</h1>
+<h1>Turmas</h1>
+<div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let course of courses">
+    <app-course [course]="course" ></app-course>
 
-<app-course [course]="course" *ngFor="let course of courses"></app-course>
+  </div>
+</div>

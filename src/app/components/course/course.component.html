@@ -1,7 +1,9 @@
-<div class="card">
+<div class="card mb-2" >
   <a [routerLink]="['/cursos', course.id, 'detalhes']">
-    <h4>{{course.name}}</h4>
+  <div class="card-body">
+      <h5 class="card-title">{{ course.name }}</h5>
+
+      <p class="card-text"><span>{{ course.students.length }} alunos</span></p>
+    </div>
   </a>
-  <span>{{course.students.length}} alunos</span>
-  <p>{{course.description}}</p>
-</div>
+  </div>
