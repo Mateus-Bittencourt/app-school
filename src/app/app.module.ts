@@ -10,6 +10,7 @@ import { CoursesShowComponent } from './pages/courses-show/courses-show.componen
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { CoursesNewComponent } from './pages/courses-new/courses-new.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LayoutComponent } from './pages/layout/layout.component';
     CourseComponent,
     CoursesShowComponent,
     LoginComponent,
-    LayoutComponent
+    LayoutComponent,
+    CoursesNewComponent
   ],
   imports: [
     BrowserModule,

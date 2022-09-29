@@ -8,6 +8,7 @@ import { CoursesShowComponent } from './pages/courses-show/courses-show.componen
 import { AuthGuard } from './guard/auth.guard';
 import { LoginComponent } from './pages/login/login.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { CoursesNewComponent } from './pages/courses-new/courses-new.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -20,6 +21,11 @@ const routes: Routes = [
       {
         path: 'cursos',
         component: CoursesIndexComponent,
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'cursos/novo',
+        component: CoursesNewComponent,
         canActivate: [AuthGuard],
       },
       {
