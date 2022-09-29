@@ -7,19 +7,27 @@ import { CoursesShowComponent } from './pages/courses-show/courses-show.componen
 
 import { AuthGuard } from './guard/auth.guard';
 import { LoginComponent } from './pages/login/login.component';
+import { LayoutComponent } from './pages/layout/layout.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   {
-    path: 'cursos',
-    component: CoursesIndexComponent,
+    path: 'dashboard',
+    component: LayoutComponent,
     canActivate: [AuthGuard],
-  },
-  {
-    path: 'cursos/:id/detalhes',
-    component: CoursesShowComponent,
-    canActivate: [AuthGuard],
+    children: [
+      { path: 'home', component: HomeComponent },
+      {
+        path: 'cursos',
+        component: CoursesIndexComponent,
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'cursos/:id/detalhes',
+        component: CoursesShowComponent,
+        canActivate: [AuthGuard],
+      },
+    ],
   },
 ];
 

@@ -1,6 +1,41 @@
 .navbar {
+  padding: 0.5rem 1rem;
   h2 {
     color: #FFF;
+    margin-right: 10px;
   }
-  padding: 1rem;
+  .navbar-text {
+    margin-right: 10px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  // line-height: 80px; /* Vertically center the text there */
+  background-color: #FFF;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  font-size: 14px;
+
+  p {
+    margin: 0;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  }
 }
